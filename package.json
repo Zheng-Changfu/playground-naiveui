@@ -1,0 +1,29 @@
+{
+  "name": "naiveui-sfc-playground",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.10.0",
+  "keywords": [
+    "naive-ui",
+    "playground",
+    "repl"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vue/repl": "^4.6.1",
+    "naive-ui": "^2.42.0",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-bundle-analyzer": "^0.15.2",
+    "vue-tsc": "^2.0.29"
+  }
+}
