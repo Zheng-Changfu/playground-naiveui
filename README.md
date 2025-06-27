@@ -1,1 +1,1 @@
-# playground for naiveui
+# playground for naive-ui
