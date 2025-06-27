@@ -1,4 +1,5 @@
-  <template>
+<template>
+  <n-config-provider>
     <n-loading-bar-provider>
       <n-message-provider>
         <n-notification-provider>
@@ -10,7 +11,8 @@
         </n-notification-provider>
       </n-message-provider>
     </n-loading-bar-provider>
-  </template>
+  </n-config-provider>
+</template>
 
 <script setup lang="ts">
 import Demo from './Demo.vue'

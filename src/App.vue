@@ -9,6 +9,7 @@ import Demo from "./template/Demo.vue?raw";
 
 const previewOptions = {
   headHTML: `
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.css" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"><\/script>
     <script>
       window.__unocss = {
@@ -66,6 +67,17 @@ const mergedImportMap = computed(() => {
         `https://unpkg.com/naive-ui@${naiveUiVersion.value}/dist/index${productionMode.value ? ".prod.mjs" : ".mjs"
         }`,
       "date-fns": `https://cdn.jsdelivr.net/npm/date-fns@3.6.0/index${productionMode.value ? ".min.mjs" : '.mjs'}`,
+      "seemly": "/seemly.prod.mjs",
+      "@vicons/ionicons4": "/vicons/ionicons4.prod.mjs",
+      "@vicons/ionicons5": "/vicons/ionicons5.prod.mjs",
+      "@vicons/fluent/Flash16Regular": "/vicons/flash16Regular.prod.mjs",
+      "@vicons/fluent/Checkmark16Filled": "/vicons/checkmark16Filled.prod.mjs",
+      "@vicons/fluent/AnimalCat24Regular": "/vicons/animalCat24Regular.prod.mjs",
+      "@vicons/fluent/Temperature16Regular": "/vicons/temperature16Regular.prod.mjs",
+      "@vicons/fluent/FlashCheckmark16Regular": "/vicons/flashCheckmark16Regular.prod.mjs",
+      "katex": "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs",
+      "@lylajs/web":"/lylajs-web.prod.mjs",
+      "grapheme-splitter":"/grapheme-splitter.prod.mjs",
     },
   };
   return mergeImportMap(baseImportMap.value, customImportMap);
